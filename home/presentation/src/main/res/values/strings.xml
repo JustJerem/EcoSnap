@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="your_friends_soon_in_your_feed">Your friends, soon in your feed</string>
+    <string name="this_will_come_with_a_future_update">This will come with a future update. You\'ll be able to see the clean-up actions your friends have undertaken and congratulate them.</string>
+    <string name="cd_cleaning_area_image">Cleaning Area Image</string>
+    <string name="photos">%1$s photos</string>
+    <string name="are_you_ready_for_your_mission">Are you ready for your mission ?</string>
+    <string name="accomplish_your_mission_with_excellence_and_may_success_be_with_you">Accomplish your mission with excellence, and may success be with you.</string>
+    <string name="declare_a_cleaning_area">Declare a cleaning area</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="take_a_photo">Take a Photo</string>
+    <string name="start_cleaning">Start Cleaning</string>
+    <string name="cd_add_image">Add Image</string>
+    <string name="before">Before</string>
+    <string name="after">After</string>
+    <string name="cd_back_to_home">Back to home</string>
+    <string name="cd_remove_image">Remove image</string>
+    <string name="cd_before_image">Before Image</string>
+    <string name="take_a_picture_of_the_area_to_be_cleaned">Take a picture of the area to be cleaned</string>
+    <string name="this_allows_you_to_show_us_a_before_and_after">This allows you to show us a before and after, and to be proud of your action.</string>
+    <string name="thank_you_your_mission_s_will_be_reviewed">Thank you, your mission\'s will be reviewed</string>
+    <string name="keep_up_your_spirits_in_the_game">Keep up your spirits in the game\nand enhance your skills.</string>
+    <string name="great">Great !</string>
+    <string name="tag_participants">Tag Participants</string>
+    <string name="enter_participants_separated_by_commas">Enter participants, separated by commas</string>
+    <string name="cleaning_area_saved_mother_earth_thanks_you">Cleaning Area Saved. Mother Earth thanks you</string>
+    <string name="submit_cleaning_proof">Submit Cleaning Proof</string>
+    <string name="cd_back">Back</string>
+    <string name="submit">Submit</string>
+    <string name="cd_remove">Remove</string>
+</resources>
