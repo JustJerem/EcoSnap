@@ -25,6 +25,21 @@ environmental cleanup efforts into a positive, rewarding, and community-driven m
   Also French version
   available [here](https://justjerem.notion.site/Ecosnap-Capture-Agis-pour-une-Plan-te-Plus-Verte-18e2da74de53808aad83c92e32400552)
 
+## Video
+
+https://github.com/user-attachments/assets/e4da5155-5ea1-4cff-8485-17949948a695
+
+
+## Screen Shots
+
+[<img src="https://raw.githubusercontent.com/JustJerem/EcoSnap/master/documentation/0.png" width=200 />](https://raw.githubusercontent.com/JustJerem/IdentityReader/master/documentation/1.png)
+[<img src="https://raw.githubusercontent.com/JustJerem/EcoSnap/master/documentation/1.png" width=200 />](https://raw.githubusercontent.com/JustJerem/IdentityReader/master/documentation/1.png)
+[<img src="https://raw.githubusercontent.com/JustJerem/EcoSnap/master/documentation/2.png" width=200 />](https://raw.githubusercontent.com/JustJerem/IdentityReader/master/documentation/2.png)
+[<img src="https://raw.githubusercontent.com/JustJerem/EcoSnap/master/documentation/4.png" width=200 />](https://raw.githubusercontent.com/JustJerem/IdentityReader/master/documentation/4.png)
+[<img src="https://raw.githubusercontent.com/JustJerem/EcoSnap/master/documentation/5.png" width=200 />](https://raw.githubusercontent.com/JustJerem/IdentityReader/master/documentation/4.png)
+[<img src="https://raw.githubusercontent.com/JustJerem/EcoSnap/master/documentation/6.png" width=200 />](https://raw.githubusercontent.com/JustJerem/IdentityReader/master/documentation/4.png)
+[<img src="https://raw.githubusercontent.com/JustJerem/EcoSnap/master/documentation/7.png" width=200 />](https://raw.githubusercontent.com/JustJerem/IdentityReader/master/documentation/4.png)
+
 ## Features
 
 - **Report Polluted Areas**  
@@ -74,18 +89,6 @@ environmental cleanup efforts into a positive, rewarding, and community-driven m
   the project easier to maintain and scale.
 - Follows an **offline-first** approach with **Room Database** and **DataStore**, allowing smooth
   operation even without an Internet connection.
-
-## Video
-
-## Screen Shots
-
-[<img src="https://raw.githubusercontent.com/JustJerem/EcoSnap/master/documentation/0.png" width=200 />](https://raw.githubusercontent.com/JustJerem/IdentityReader/master/documentation/1.png)
-[<img src="https://raw.githubusercontent.com/JustJerem/EcoSnap/master/documentation/1.png" width=200 />](https://raw.githubusercontent.com/JustJerem/IdentityReader/master/documentation/1.png)
-[<img src="https://raw.githubusercontent.com/JustJerem/EcoSnap/master/documentation/2.png" width=200 />](https://raw.githubusercontent.com/JustJerem/IdentityReader/master/documentation/2.png)
-[<img src="https://raw.githubusercontent.com/JustJerem/EcoSnap/master/documentation/4.png" width=200 />](https://raw.githubusercontent.com/JustJerem/IdentityReader/master/documentation/4.png)
-[<img src="https://raw.githubusercontent.com/JustJerem/EcoSnap/master/documentation/5.png" width=200 />](https://raw.githubusercontent.com/JustJerem/IdentityReader/master/documentation/4.png)
-[<img src="https://raw.githubusercontent.com/JustJerem/EcoSnap/master/documentation/6.png" width=200 />](https://raw.githubusercontent.com/JustJerem/IdentityReader/master/documentation/4.png)
-[<img src="https://raw.githubusercontent.com/JustJerem/EcoSnap/master/documentation/7.png" width=200 />](https://raw.githubusercontent.com/JustJerem/IdentityReader/master/documentation/4.png)
 
 ## Architecture Overview
 
