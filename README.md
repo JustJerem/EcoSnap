@@ -87,7 +87,7 @@ https://github.com/user-attachments/assets/e4da5155-5ea1-4cff-8485-17949948a695
   module—to be reused in other applications.
 - Uses a **build logic** approach, centralizing all Gradle configurations in a single place, making
   the project easier to maintain and scale.
-- Follows an **offline-first** approach with **Room Database** and **DataStore**, allowing smooth
+- Follows an **offline-first** approach with **Room Database**, allowing smooth
   operation even without an Internet connection.
 
 ## Architecture Overview
