@@ -42,7 +42,7 @@ fun CleaningAreaItem(area: CleaningArea, onTap: () -> Unit) {
         modifier = Modifier
             .fillMaxWidth()
             .padding(12.dp)
-            .clickable(onClick = onTap),
+            .clickable(onClick = { if (area.status != CleaningStatus.SUBMITTED) onTap() }),
     ) {
         Column(Modifier.padding(16.dp)) {
             Box {

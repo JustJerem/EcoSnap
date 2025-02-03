@@ -64,7 +64,7 @@ val DarkColorScheme = darkColorScheme(
     tertiary = Color(0xFF6D4C41),
     onTertiary = Color.White,
 
-    background = Color(0xFF1B5E20),
+    background = Color(0xFF0C280E),
     onBackground = Color(0xFFE8F5E9),
 
     surface = Color(0xFF2E7D32),
