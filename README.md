@@ -94,7 +94,7 @@ https://github.com/user-attachments/assets/e4da5155-5ea1-4cff-8485-17949948a695
 
 ## Architecture Overview
 
-[<img src="https://raw.githubusercontent.com/JustJerem/EcoSnap/master/documentation/archi.png"/>](https://raw.githubusercontent.com/JustJerem/IdentityReader/master/documentation/Overview.png)
+[<img src="https://raw.githubusercontent.com/JustJerem/EcoSnap/master/documentation/archi.png"/>](https://raw.githubusercontent.com/JustJerem/EcoSnap/master/documentation/archi.png)
 
 ## Modules Overview
 
