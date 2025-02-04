@@ -16,6 +16,8 @@ suffer from overflowing streets and inefficient waste collection. **EcoSnap** pr
 populations with a tool to self-organize, collaborate with authorities and NGOs, and improve their
 living environment.
 
+EcoSnap also **aids disaster response**, especially after hurricanes in **North America**, by helping communities report debris and hazards in real time. It **enables residents, responders, and authorities to coordinate** cleanup efficiently, ensuring faster recovery and sustainable rebuilding.
+
 By promoting **citizen engagement and collective responsibility**, **EcoSnap** transforms
 environmental cleanup efforts into a positive, rewarding, and community-driven movement. 🌍♻️
 
@@ -50,10 +52,6 @@ https://github.com/user-attachments/assets/e4da5155-5ea1-4cff-8485-17949948a695
   Users can add additional photos and tag other participants, earning more points and increasing
   their impact within the community.
 
-- **Interactive Map - Next Update**  
-  Access a real-time map showcasing all reported polluted areas. A future update will allow users to
-  see their friends’ contributions as well.
-
 - **Cleanup Validation**  
   Upon selecting a reported location, users are prompted to upload an “after” photo of the cleaned
   site and tag participants who contributed.
@@ -65,6 +63,10 @@ https://github.com/user-attachments/assets/e4da5155-5ea1-4cff-8485-17949948a695
 - **Collaboration with NGOs and Local Authorities**  
   EcoSnap helps citizens connect with NGOs and government agencies to organize cleanups and improve
   waste management efficiency.
+
+- **Interactive Map**  
+  Access a real-time map showcasing all reported polluted areas. A future update will allow users to
+  see their friends’ contributions as well.
 
 ### Additional Highlights
 
