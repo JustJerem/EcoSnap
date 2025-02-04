@@ -52,10 +52,6 @@ https://github.com/user-attachments/assets/e4da5155-5ea1-4cff-8485-17949948a695
   Users can add additional photos and tag other participants, earning more points and increasing
   their impact within the community.
 
-- **Interactive Map - Next Update**  
-  Access a real-time map showcasing all reported polluted areas. A future update will allow users to
-  see their friends’ contributions as well.
-
 - **Cleanup Validation**  
   Upon selecting a reported location, users are prompted to upload an “after” photo of the cleaned
   site and tag participants who contributed.
@@ -67,6 +63,10 @@ https://github.com/user-attachments/assets/e4da5155-5ea1-4cff-8485-17949948a695
 - **Collaboration with NGOs and Local Authorities**  
   EcoSnap helps citizens connect with NGOs and government agencies to organize cleanups and improve
   waste management efficiency.
+
+- **Interactive Map**  
+  Access a real-time map showcasing all reported polluted areas. A future update will allow users to
+  see their friends’ contributions as well.
 
 ### Additional Highlights
 
