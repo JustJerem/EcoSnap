@@ -16,6 +16,8 @@ suffer from overflowing streets and inefficient waste collection. **EcoSnap** pr
 populations with a tool to self-organize, collaborate with authorities and NGOs, and improve their
 living environment.
 
+EcoSnap also **aids disaster response**, especially after hurricanes in **North America**, by helping communities report debris and hazards in real time. It **enables residents, responders, and authorities to coordinate** cleanup efficiently, ensuring faster recovery and sustainable rebuilding.
+
 By promoting **citizen engagement and collective responsibility**, **EcoSnap** transforms
 environmental cleanup efforts into a positive, rewarding, and community-driven movement. 🌍♻️
 
