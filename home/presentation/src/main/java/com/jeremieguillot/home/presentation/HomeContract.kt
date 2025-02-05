@@ -1,6 +1,6 @@
 package com.jeremieguillot.home.presentation
 
-import com.jeremieguillot.core.domain.CleaningArea
+import com.jeremieguillot.core.presentation.model.CleaningAreaUi
 import com.jeremieguillot.core.presentation.ui.UiText
 
 /**
@@ -20,7 +20,7 @@ sealed class HomeContract {
      * Represents the possible states of the Home screen.
      */
     data class State(
-        val currentCleaningAreas: List<CleaningArea> = emptyList(),
+        val currentCleaningAreas: List<CleaningAreaUi> = emptyList(),
         val isLoading: Boolean = true,
         val errorMessage: String? = null
     )

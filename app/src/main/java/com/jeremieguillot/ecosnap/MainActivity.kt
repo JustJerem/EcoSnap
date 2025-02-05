@@ -69,11 +69,13 @@ class MainActivity : ComponentActivity() {
 
                         val path =
                             entry.savedStateHandle.get<String?>(Constants.ARGUMENT_PHOTO_PATH)
-                        viewModel.onAction(
-                            SubmitCleaningProofContract.Action.AddImage(
-                                path
+                        path?.let {
+                            viewModel.onAction(
+                                SubmitCleaningProofContract.Action.AddImage(
+                                    it
+                                )
                             )
-                        )
+                        }
                         SubmitCleaningProofScreenRoot(
                             viewModel = viewModel,
                             navigateToTakePhoto = { navController.navigate(Route.PictureScreen) },

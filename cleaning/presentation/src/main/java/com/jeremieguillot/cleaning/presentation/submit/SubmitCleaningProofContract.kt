@@ -1,12 +1,11 @@
 package com.jeremieguillot.cleaning.presentation.submit
 
-import com.jeremieguillot.cleaning.presentation.declare.DeclareCleaningContract.Event
-import com.jeremieguillot.core.domain.CleaningArea
+import com.jeremieguillot.core.presentation.model.CleaningAreaUi
 import com.jeremieguillot.core.presentation.ui.UiText
 
 sealed class SubmitCleaningProofContract {
     sealed class Action {
-        data class AddImage(val path: String?) : Action()
+        data class AddImage(val path: String) : Action()
         data class AddParticipant(val participant: String) : Action()
         data class RemoveParticipant(val participant: String) : Action()
         data class Load(val id: Long) : Action()
@@ -23,7 +22,7 @@ sealed class SubmitCleaningProofContract {
 
     data class State(
         val isLoading: Boolean = true,
-        val cleaningArea: CleaningArea? = null,
+        val cleaningArea: CleaningAreaUi? = null,
         val afterPhoto: String? = null,
         val points: Int = 0,
         val taggedParticipants: List<String> = emptyList(),

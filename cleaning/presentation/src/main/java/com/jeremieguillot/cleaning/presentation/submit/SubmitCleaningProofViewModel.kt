@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.jeremieguillot.core.domain.CleaningRepository
 import com.jeremieguillot.core.domain.ScoreCalculator
 import com.jeremieguillot.core.domain.util.Result
+import com.jeremieguillot.core.presentation.toUiModel
 import com.jeremieguillot.core.presentation.ui.asUiText
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -38,7 +39,7 @@ class SubmitCleaningProofViewModel(
                             _state.update {
                                 it.copy(
                                     isLoading = false,
-                                    cleaningArea = result.data,
+                                    cleaningArea = result.data.toUiModel(),
                                 )
                             }
                             updatePoints()
@@ -68,23 +69,30 @@ class SubmitCleaningProofViewModel(
 
             SubmitCleaningProofContract.Action.SubmitProof -> {
                 viewModelScope.launch {
-                    state.value.cleaningArea?.let { cleaningArea ->
-                        val cleanedArea = cleaningArea.copy(
-                            points = state.value.points,
-                            taggedParticipants = state.value.taggedParticipants,
-                            afterPhoto = state.value.afterPhoto
+                    val id = state.value.cleaningArea?.id ?: return@launch
+                    val result = cleaningRepository.getCleaningAreaById(id)
+
+                    if (result is Result.Error) {
+                        eventChannel.send(SubmitCleaningProofContract.Event.ShowError(result.error.asUiText()))
+                    }
+
+                    val area = (result as Result.Success).data.copy(
+                        points = state.value.points,
+                        taggedParticipants = state.value.taggedParticipants,
+                        afterPhoto = state.value.afterPhoto
+                    )
+
+                    val submissionResult = cleaningRepository.submitCleaningProof(area)
+
+                    val event = when (submissionResult) {
+                        is Result.Error -> SubmitCleaningProofContract.Event.ShowError(
+                            submissionResult.error.asUiText()
                         )
 
-                        when (val result = cleaningRepository.submitCleaningProof(cleanedArea)) {
-                            is Result.Error -> eventChannel.send(
-                                SubmitCleaningProofContract.Event.ShowError(
-                                    result.error.asUiText()
-                                )
-                            )
-
-                            is Result.Success -> eventChannel.send(SubmitCleaningProofContract.Event.ProofSubmitted)
-                        }
+                        is Result.Success -> SubmitCleaningProofContract.Event.ProofSubmitted
                     }
+
+                    eventChannel.send(event)
                 }
             }
 
@@ -94,7 +102,7 @@ class SubmitCleaningProofViewModel(
 
     private fun updatePoints() {
         val updatedPoints = ScoreCalculator(
-            numberOfPhotos = state.value.cleaningArea?.photoPaths?.size ?: 0,
+            numberOfPhotos = state.value.cleaningArea?.photos?.size ?: 0,
             numberOfParticipants = state.value.taggedParticipants.size,
             isCleaningDone = state.value.afterPhoto?.isNotEmpty() == true
         ).calculateScore()

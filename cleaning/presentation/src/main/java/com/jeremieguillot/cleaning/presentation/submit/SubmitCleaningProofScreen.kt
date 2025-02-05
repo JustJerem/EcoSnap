@@ -112,8 +112,8 @@ fun SubmitCleaningProofScreen(
                 when {
                     state.isLoading -> CircularProgressIndicator(Modifier.fillMaxWidth())
                     else -> {
-                        state.cleaningArea?.photoPaths?.first()?.let { photoPath ->
-                            BeforeAfterImagePlaceholder(photoPath, state.afterPhoto) {
+                        state.cleaningArea?.photos?.first()?.let { photo ->
+                            BeforeAfterImagePlaceholder(photo, state.afterPhoto) {
                                 onAction(SubmitCleaningProofContract.Action.NavigateToTakePhoto)
                             }
                         }

@@ -1,5 +1,6 @@
 package com.jeremieguillot.cleaning.presentation.composables
 
+import android.graphics.Bitmap
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -8,18 +9,22 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.jeremieguillot.cleaning.presentation.R
+import com.jeremieguillot.core.presentation.ui.loadBitmapFromPath
 
 
 @Composable
 fun BeforeAfterImagePlaceholder(
-    beforeImagePath: String,
-    afterImagePath: String?,
+    beforeImage: Bitmap,
+    afterImage: String?,
     onPlaceholderClick: () -> Unit
 ) {
     Row(
@@ -32,7 +37,7 @@ fun BeforeAfterImagePlaceholder(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             BeforeAfterTitle(stringResource(R.string.before))
-            DecoratedImage(beforeImagePath)
+            DecoratedImage(beforeImage)
         }
 
         // After Column
@@ -42,7 +47,12 @@ fun BeforeAfterImagePlaceholder(
         ) {
             BeforeAfterTitle(stringResource(R.string.after))
             when {
-                afterImagePath != null -> DecoratedImage(afterImagePath)
+                afterImage != null -> {
+                    val bitmap by remember(afterImage) {
+                        mutableStateOf(loadBitmapFromPath(afterImage))
+                    }
+                    DecoratedImage(bitmap)
+                }
                 else -> AfterPlaceholder(
                     onPlaceholderClick = onPlaceholderClick
                 )
